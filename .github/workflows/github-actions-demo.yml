@@ -7,3 +7,11 @@ jobs:
     steps:
       - run: echo "hello gabbs"
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: listing file in github actions
+        run:
+          ls ${{ $github.workspace}}
+      - run: echo "🍏 This job's status is ${{ job.status }}."
+
