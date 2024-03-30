@@ -5,4 +5,4 @@ jobs:
   Explore-github-actions:
     runs-on: ubuntu-latest
     steps:
-      -run: echo "hello this gabbs the best"
+      -run: echo "hello this gabbs"
