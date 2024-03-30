@@ -5,4 +5,5 @@ jobs:
   Explore-github-actions:
     runs-on: ubuntu-latest
     steps:
-      -run: echo "hello this gabbs"
+      - run: echo "hello this gabbs"
+      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
